@@ -28,13 +28,13 @@ pip install requests
 ```
 import os
 
-from ApolloConfig import ApolloConfig
+from ApolloClient import ApolloClient
 
 os.environ.setdefault('ENV_PREFIX_APOLLO', 'apollo')
 os.environ.setdefault('APOLLO_URI', 'http://192.168.68.251:8080')
 os.environ.setdefault('APOLLO_APPID', 'equipment-services')
 
-client = ApolloConfig.env()
+client = ApolloClient.env()
 ```
 
 拉取配置：
